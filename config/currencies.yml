@@ -1,0 +1,88 @@
+- id: 1
+  code: usdt
+  rpc: "http://nextstep:so5d9gF3_jkFkkmPCH2c_3GbA1TG1JJyQUyOLqpmKzs=@10.35.0.57:18332"
+  property_id: 2147484866
+  amqp_queue: "peatio.deposit.command"
+- id: 2
+  key: satoshi
+  code: btc
+  symbol: "฿"
+  coin: true
+  enabled: true
+  quick_withdraw_max: 0
+  deposit_max: 0.1
+  rpc: http://nextstep:nextpwd@localhost:18332
+  blockchain: https://testnet.blockchain.info/tx/#{txid}
+  address_url: https://testnet.blockchain.info/address/#{address}
+  assets:
+    accounts:
+      -
+        address: 2N51s9XDFk4NHAUfzjJ1KvQ1XxXWm5TbGKx
+- id: 3
+  key: ethcoin
+  code: eth
+  handler: ETH
+  symbol: "Ξ"
+  coin: true
+  enabled: true
+  quick_withdraw_max: 0
+  deposit_max: 10
+  rpc: http://10.35.11.56:8545
+  password: nextpwd
+  main_wallet: '0x0060B2338DA4b8378fbaC26CD20511bF1A46839d'
+  blockchain: 'https://ropsten.etherscan.io/tx/#{txid}'
+  address_url: 'https://ropsten.etherscan.io/address/#{address}'
+  gas_price: 36  #in Gwei
+- id: 4
+  key: mitaocoin
+  code: mitao
+  handler: MITAO
+  symbol: "蜜"
+  coin: true
+  enabled: false
+  quick_withdraw_max: 0
+  deposit_max: 1000
+  rpc: http://10.35.11.56:8545
+  password: nextpwd
+  main_wallet: '0x0060B2338DA4b8378fbaC26CD20511bF1A46839d'
+  contract_address: '0xbd684b55a091d877787076db74d3929834fb6ca4'
+  blockchain: 'https://ropsten.etherscan.io/tx/#{txid}'
+  address_url: 'https://ropsten.etherscan.io/address/#{address}'
+  gas_price: 36  #in Gwei
+- id: 5
+  key: elendcoin
+  code: elend
+  handler: ELEND
+  symbol: "E"
+  decimal: 18
+  coin: true
+  enabled: true
+  quick_withdraw_max: 0
+  deposit_max: 1000
+  rpc: http://10.35.11.56:8545
+  password: nextpwd
+  main_wallet: '0x0060B2338DA4b8378fbaC26CD20511bF1A46839d'
+  contract_address: '0xbd684b55a091d877787076db74d3929834fb6ca4'
+  event_topic: '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef'
+  blockchain: 'https://ropsten.etherscan.io/tx/#{txid}'
+  address_url: 'https://ropsten.etherscan.io/address/#{address}'
+  gas_price: 36  #in Gwei
+- id: 7
+  key: chubicoin
+  code: chu
+  handler: CHUBI
+  symbol: "C"
+  decimal: 8
+  coin: true
+  enabled: true
+  quick_withdraw_max: 0
+  deposit_max: 1000
+  rpc: http://10.35.11.56:8545
+  password: nextpwd
+  main_wallet: '0x0060B2338DA4b8378fbaC26CD20511bF1A46839d'
+  contract_address: '0x2fbc3553eec99d23925e942c4908331081d59b93'
+  event_topic: '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef'
+  blockchain: 'https://ropsten.etherscan.io/tx/#{txid}'
+  address_url: 'https://ropsten.etherscan.io/address/#{address}'
+  gas_price: 36  #in Gwei
+

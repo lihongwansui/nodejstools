@@ -1,0 +1,28 @@
+- id: btceth
+  code: 4
+  #name: BTC/CNY      # default name
+  base_unit: btc
+  quote_unit: eth
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.002, currency: eth, fixed: 8}
+  ask: {fee: 0.002, currency: btc, fixed: 10}
+  sort_order: 1
+  visible: true     # default to true
+- id: mitaoeth
+  code: 5
+  base_unit: mitao
+  quote_unit: eth
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.002, currency: eth, fixed: 8}
+  ask: {fee: 0.002, currency: mitao, fixed: 4}
+  sort_order: 1
+  visible: false     # default to true
+- id: elendeth
+  code: 6
+  base_unit: elend
+  quote_unit: eth
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0.002, currency: eth, fixed: 8}
+  ask: {fee: 0.002, currency: elend, fixed: 4}
+  sort_order: 1
+  visible: true     # default to true

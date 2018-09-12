@@ -1,0 +1,25 @@
+development: &defaults
+  erc20_query_host: 'test.tokenbalance.com' #token持有量查询网址
+  parity_url: 'http://10.35.11.56:8540' 
+  base_gas_price: 8 #基本气价
+  gas_wallet: '0x00067E8e835e190ae71C87d040D904bfa4F8A4D7' #用于发油费的钱包，与主钱包分开
+  gas_wallet_pwd: nextpwd #油费钱包密码
+  deal_limit: 100 #每次读取数据库的数量限制，测试时可开小点
+  eos_url: "http://10.35.11.56:8888"
+  eos_main_account: "chubideposit"
+  ripper_url: "https://s.altnet.rippletest.net:51234"
+  ripper_main_account: "rptHRGQHzH2bPBeW9rJ12YknynzTDrKrNG"
+
+
+production:
+  <<: *defaults
+  erc20_query_host: 'api.tokenbalance.com'
+  parity_url: 'http://172.31.47.17:8540'
+  base_gas_price: 8 #基本气价
+  gas_wallet: '0x00067E8e835e190ae71C87d040D904bfa4F8A4D7' #用于发油费的钱包，与主钱包分开
+  gas_wallet_pwd: nextpwd #油费钱包密码
+  deal_limit: 100 #每次读取数据库的数量限制，测试时可开小点
+  eos_url: "http://10.35.11.56:8888"
+  eos_main_account: "chubideposit"
+  ripper_url: "https://s.altnet.rippletest.net:51234"
+  ripper_main_account: "rptHRGQHzH2bPBeW9rJ12YknynzTDrKrNG"

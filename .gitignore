@@ -1,0 +1,6 @@
+/node_modules
+/.vscode
+/nodedaemons/logs
+/logs
+/nodetools/reportforms/dailyreport
+/nodetools/reportforms/logs

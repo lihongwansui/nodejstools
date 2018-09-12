@@ -1,0 +1,9 @@
+connect:
+  hostname: 193.112.195.120
+  port: 5672
+  username: guest
+  password: guest
+  # hostname: 10.35.11.134
+  # port: 5672
+  # username: whl
+  # password: '123456'

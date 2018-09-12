@@ -1,0 +1,72 @@
+{
+    "appenders": {
+        "out": {"type": "console"},
+        "logger": {
+            "type": "dateFile",
+            "filename": "logs/server.log",
+            "pattern": "yyyy-MM-dd",
+            "maxLogSize": 1024,
+            "alwaysIncludePattern": false,
+            "backups": 10
+        },
+        "eoslogger": {
+            "type": "dateFile",
+            "filename": "logs/eosserver.log",
+            "pattern": "yyyy-MM-dd",
+            "maxLogSize": 1024,
+            "alwaysIncludePattern": false,
+            "backups": 10
+        },
+        "ripperlogger": {
+            "type": "dateFile",
+            "filename": "logs/ripperserver.log",
+            "pattern": "yyyy-MM-dd",
+            "maxLogSize": 1024,
+            "alwaysIncludePattern": false,
+            "backups": 10
+        },
+        "peationdepositlogger": {
+            "type": "dateFile",
+            "filename": "logs/peatiodeposit.log",
+            "pattern": "yyyy-MM-dd",
+            "maxLogSize": 1024,
+            "alwaysIncludePattern": false,
+            "backups": 10
+        },
+        "usdtlogger": {
+            "type": "dateFile",
+            "filename": "logs/usdtserver.log",
+            "pattern": "yyyy-MM-dd",
+            "maxLogSize": 1024,
+            "alwaysIncludePattern": false,
+            "backups": 10
+        },
+        "eoserror": {
+            "type": "dateFile",
+            "filename": "logs/eoserror.log",
+            "pattern": "yyyy-MM-dd",
+            "maxLogSize": 1024,
+            "alwaysIncludePattern": false,
+            "backups": 10
+        },
+        "error": {
+            "type": "dateFile",
+            "filename": "logs/error.log",
+            "pattern": "yyyy-MM-dd",
+            "maxLogSize": 1024,
+            "alwaysIncludePattern": false,
+            "backups": 10
+        }
+    },
+    "categories": {
+        "default": {"appenders": ["out"], "level": "info"},
+        "logger": {"appenders": ["logger"], "level": "info"},
+        "eoslogger": {"appenders": ["eoslogger"], "level": "info"},
+        "ripperlogger": {"appenders": ["ripperlogger"], "level": "info"},
+        "peationdepositlogger": {"appenders": ["peationdepositlogger"], "level": "info"},
+        "usdtlogger": {"appenders": ["usdtlogger"], "level": "info"},
+        "eoserror": {"appenders": ["eoserror"], "level": "info"},
+        "error": {"appenders": ["error"], "level": "info"}
+
+    }
+}
